@@ -14,10 +14,5 @@ pipeline {
                 sh 'docker image build -t shaikkhajaibrahim/saleor-dashboar:DEV .'
             }
         }
-        stage('push image to registry') {
-            steps {
-                sh 'docker image push shaikkhajaibrahim/saleor-dashboar:DEV'
-            }
-        }
     }
 }
